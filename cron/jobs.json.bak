@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "fc65b66b-b636-4b96-a47f-b941081fb988",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Update today's gold price in INR",
+      "enabled": true,
+      "createdAtMs": 1775914274819,
+      "updatedAtMs": 1776017278454,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "Asia/Calcutta"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Reminder: Update today's gold price in INR."
+      },
+      "state": {
+        "nextRunAtMs": 1776054600000,
+        "lastRunAtMs": 1776017267809,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 10645,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0,
+        "runningAtMs": 1776411548200
+      }
+    }
+  ]
+}

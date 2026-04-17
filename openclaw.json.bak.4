@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.11",
+    "lastTouchedAt": "2026-03-16T12:52:27.787Z"
+  },
+  "env": {
+    "OPENAI_API_KEY": "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"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-13T15:36:45.361Z",
+    "lastRunVersion": "2026.3.11",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openai:default": {
+        "provider": "openai",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/gpt-4.1-mini"
+      },
+      "models": {
+        "openai/gpt-5.1-codex": {
+          "alias": "GPT"
+        },
+        "openai/gpt-4.1-nano": {},
+        "openai/gpt-4.1-mini": {}
+      },
+      "workspace": "C:\\Users\\Computer\\.openclaw\\workspace"
+    },
+    "list": [
+      {
+        "id": "main",
+        "model": "openai/gpt-4.1-mini"
+      }
+    ]
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "brave",
+        "apiKey": "kaodsmdmlksamcmma"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+917975007767"
+      ],
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "40dd9b7bd2d26bb671220c3131f6f6cb5797f3d254cd053a"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      }
+    }
+  }
+}
