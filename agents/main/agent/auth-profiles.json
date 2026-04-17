@@ -4,7 +4,7 @@
     "openai:default": {
       "type": "api_key",
       "provider": "openai",
-      "key": "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"
+      "key": ""
     }
   },
   "usageStats": {
